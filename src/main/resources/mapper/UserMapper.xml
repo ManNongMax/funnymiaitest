@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+<mapper namespace="com.zpf.dao.user.UserDao">
+
+	<select id="getNameById" parameterType="com.funnymiai.model.user.User" resultType="com.funnymiai.model.user.User">
+		SELECT * FROM sys_user WHERE ID = #{id}
+	</select>
+	
+</mapper>
